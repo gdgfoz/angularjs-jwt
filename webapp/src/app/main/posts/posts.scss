@@ -1,0 +1,79 @@
+/**********
+menu
+ *********/
+.nav-todo{
+     -webkit-margin-before: 0;
+     -webkit-margin-after: 0;
+     -webkit-margin-start: 0px;
+     -webkit-margin-end: 0px;
+     -webkit-padding-start: 0;
+
+     li{
+          a{
+                 color: #666;
+
+                 &:hover{
+                      color:#000;
+                 }
+          }
+     }
+}
+
+/**********
+ todo
+ ********/
+
+ .todo{
+         background-color: #fff;
+         padding: 0 0 0 16px;
+         border-bottom: none;
+         color: #666;
+         border-left: 1px solid #d3d3d3;
+         border-right: 1px solid #d3d3d3;
+         border-top: 1px solid #d3d3d3;
+         box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+
+         &:last-child{
+             border-bottom: 1px solid #c4c4c4;
+         }
+
+         i{
+             font-size: 1.7rem;
+         }
+         &:hover{
+             background-color: #f1faf6
+         }
+
+
+         button.md-button i{
+           font-size: 28px;
+           position: relative;
+           top: 4px;
+
+           &.ion-ios-star{
+             color:#FFC107;
+           }
+         }
+     }
+
+     .new-task{
+       border: 1px solid rgba(0,0,0,0.12);
+       padding: 0 8px;
+
+       md-input-container{
+           padding-bottom: 0;
+       }
+       .buttons{
+         margin-top: 8px;
+
+         i{
+           font-size: 28px;
+         }
+         button{
+           margin: 0;
+           width: 42px;
+           height: 42px;
+           line-height: 42px;
+         }
+       }
+     }

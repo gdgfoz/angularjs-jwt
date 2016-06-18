@@ -1,0 +1,28 @@
+<md-content flex layout="row" layout-align="center center" class="todo-full-container auth  bg-gray">
+
+  <md-card flex="30">
+
+    <div flex class="capa-login" layout="column" layout-align="center center">
+      <img src="assets/images/logo.png" alt="GDG Foz do Iguaçu"/>
+    </div>
+    <form ng-submit="vm.login()">
+      <div class="md-padding">
+        <md-input-container>
+          <label>E-mail</label>
+          <input type="email" ng-model="vm.user.email" required>
+        </md-input-container>
+        <md-input-container>
+          <label>Senha</label>
+          <input ng-model="vm.user.password" type="password" required="">
+        </md-input-container>
+        <a href="#/remind" class="md-caption to-right no-style">Esqueci minha senha</a>
+      </div>
+      <md-card-actions layout="row">
+        <md-button href="#/singup" class="md-accent md-primary">Ainda não sou registrado</md-button>
+        <span flex></span>
+        <md-button type="submit" class="md-raised md-primary">Logar</md-button>
+      </md-card-actions>
+    </form>
+  </md-card>
+
+</md-content>

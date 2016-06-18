@@ -1,0 +1,53 @@
+<header>
+    <wt-navbar title="'GDG Foz - Blog Demo'"></wt-navbar>
+</header>
+<div  layout="column" ng-cloak="" >
+
+    <section layout="row" flex="">
+
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2 md-padding" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" style="min-height: 650px">
+            <span class="md-display-1 mg-bottom-30">Categorias</span>
+
+            <ul class="nav-todo">
+                <li>
+                    <a href="#" class="no-style md-title">Angular JS</a>
+                </li>
+                <li>
+                    <a href="#" class="no-style md-title">JS</a>
+                </li>
+                <li>
+                    <a href="#" class="no-style md-title">GULP</a>
+                </li>
+            </ul>
+
+        </md-sidenav>
+
+        <md-content flex="" layout-padding="" class="bg-gray">
+
+            <div flex class="new-task" layout="row" layout-align="space-between center">
+                <md-input-container flex md-no-float="">
+                    <input ng-model="vm.search" type="text" placeholder="Buscar posts">
+                </md-input-container>
+                <div class="buttons">
+                    <md-button class="md-icon-button md-primary" aria-label="More">
+                        <i class="ion ion-android-add-circle"></i>
+                    </md-button>
+                    <md-button ng-click="vm.toggleRight()" class="md-icon-button md-accent" aria-label="More">
+                        <i class="ion ion-edit"></i>
+                    </md-button>
+                </div>
+            </div>
+
+            <div flex ng-repeat="post in vm.posts| filter:vm.search" class="cat-item">
+                <h1 class="gray-title">{{post.title}}</h1>
+                <p>{{post.content}}</p>
+                <a href="">Veja mais</a>
+            </div>
+
+        </md-content>
+
+
+
+    </section>
+
+</div>

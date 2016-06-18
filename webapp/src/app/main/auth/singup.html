@@ -1,0 +1,26 @@
+
+  <md-content flex layout="row" layout-align="center center" class="todo-full-container auth bg-gray">
+
+    <md-card flex="30">
+      <div flex class="capa-login" layout="column" layout-align="center center">
+          <img src="assets/images/logo.png" alt="GDG Foz do Iguaçu" />
+      </div>
+      <div class="md-padding">
+        <p class="md-body-1">
+          Informe seu e-mail e em breve enviaremos intruções para sua redefinição de senha.
+        </p>
+        <md-input-container>
+            <label>E-mail</label>
+            <input ng-model="user.mail">
+        </md-input-container>
+
+      </div>
+      <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-raised md-primary">Enviar</md-button>
+          <md-button ng-href="#/login" class="md-warn">Cancelar</md-button>
+      </md-card-actions>
+
+    </md-card>
+
+
+  </md-content>
