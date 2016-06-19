@@ -9,7 +9,7 @@
 - https://github.com/barryvdh/laravel-cors
 
 ## Instalação  
-Saiba como rodar nosso projeto demo sua maquina [Guia de instalação](instalation.md).  
+Saiba como rodar nosso projeto demo sua máquina [Guia de instalação](instalation.md).  
 
 
 ## Slides da apresentação
